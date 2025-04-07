@@ -1,10 +1,55 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>My Cool Website</title>
-   </head>
-   <body>
-      <h1>Welcome to my website! ⭐️</h1>
-      <p>How was your day? 🎉</p>
-   </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enjoy the Video!</title>
+  <style>
+    /* Reset styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #f6d365, #fda085);
+      font-family: 'Arial', sans-serif;
+    }
+    .video-container {
+      width: 90%;
+      max-width: 800px;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+    .header {
+      padding: 20px;
+      text-align: center;
+      background: #fff;
+    }
+    .header h1 {
+      color: #333;
+      font-size: 24px;
+    }
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-container">
+    <div class="header">
+      <h1>Enjoy the Video!</h1>
+    </div>
+    <!-- Note: The link is modified to use the /preview endpoint for embedding -->
+    <iframe src="https://drive.google.com/file/d/1E3Td7OPWR-2lLOaXH2to6lZud9vhSNGX/preview" allowfullscreen></iframe>
+  </div>
+</body>
 </html>
